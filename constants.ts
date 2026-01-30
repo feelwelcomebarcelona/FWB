@@ -1,4 +1,4 @@
-import { Testimonial, Feature } from './types';
+import { Testimonial, Feature } from './types.ts';
 
 export const TESTIMONIALS: Testimonial[] = [
   {

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feel Welcome Barcelona | Alquileres de Lujo</title>
-  <!-- Tailwind CSS via CDN with plugins -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -45,23 +45,24 @@
       -moz-osx-font-smoothing: grayscale;
       background-color: #f6f7f8;
     }
-    /* Simple fallback display while React loads */
     #root:empty::before {
-      content: "Cargando...";
+      content: "Cargando experiencia...";
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      color: #60778a;
+      color: #198cf0;
       font-size: 1.25rem;
-      font-weight: 600;
+      font-weight: 700;
     }
   </style>
-<script type="importmap">
+  <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "react/": "https://esm.sh/react@^19.2.4/"
   }
@@ -70,5 +71,7 @@
 </head>
 <body class="bg-[#f6f7f8] text-[#111518] min-h-screen font-sans">
   <div id="root"></div>
+  <!-- Script principal de entrada -->
+  <script type="module" src="./index.tsx"></script>
 </body>
 </html>

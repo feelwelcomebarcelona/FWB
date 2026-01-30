@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import ContactSection from './components/ContactSection';
-import FeaturesSection from './components/FeaturesSection';
-import TestimonialsSection from './components/TestimonialsSection';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar.tsx';
+import ContactSection from './components/ContactSection.tsx';
+import FeaturesSection from './components/FeaturesSection.tsx';
+import TestimonialsSection from './components/TestimonialsSection.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const App: React.FC = () => {
       
       <main className="flex-1">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-10 py-12 md:py-20">
-          {/* Encabezado Hero */}
+          {/* Hero Header */}
           <div className="mb-14 text-center md:text-left">
             <h1 className="text-[#111518] text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
               Contacto y <span className="text-primary italic">Reservas</span>
