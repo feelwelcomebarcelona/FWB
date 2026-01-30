@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feel Welcome Barcelona | Luxury Rentals</title>
+  <title>Feel Welcome Barcelona | Alquileres de Lujo</title>
+  <!-- Tailwind CSS via CDN with plugins -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet" />
   <script>
@@ -41,11 +43,19 @@
       padding: 0;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      background-color: #f6f7f8;
     }
-    /* Suavizado de carga */
-    #root:empty {
-      background: #f6f7f8;
-      min-height: 100vh;
+    /* Simple fallback display while React loads */
+    #root:empty::before {
+      content: "Cargando...";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #60778a;
+      font-size: 1.25rem;
+      font-weight: 600;
     }
   </style>
 <script type="importmap">

@@ -1,20 +1,19 @@
-
 import { Testimonial, Feature } from './types';
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
     name: 'Marc Wilson',
-    date: 'Stayed July 2023',
-    text: '"The apartment was spotless and the location in Cornellà was perfect for a more local experience while still being 15 mins from the center."',
+    date: 'Estancia en Julio 2023',
+    text: '"El apartamento estaba impecable y la ubicación en Cornellà fue perfecta para una experiencia local real, a solo 15 minutos del centro."',
     rating: 5,
     avatar: 'https://picsum.photos/id/64/100/100'
   },
   {
     id: '2',
     name: 'Elena Rodriguez',
-    date: 'Stayed Sept 2023',
-    text: '"Wonderful communication from the team. The WhatsApp support was super fast when we needed a local restaurant recommendation."',
+    date: 'Estancia en Sept 2023',
+    text: '"Excelente comunicación del equipo. El soporte por WhatsApp fue súper rápido cuando necesitamos una recomendación de restaurante."',
     rating: 5,
     avatar: 'https://picsum.photos/id/65/100/100'
   }
@@ -23,17 +22,17 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FEATURES: Feature[] = [
   {
     icon: 'sanitizer',
-    title: 'Professional Cleaning',
-    description: 'Every apartment is sanitized by professional teams following strict COVID-19 safety protocols.'
+    title: 'Limpieza Profesional',
+    description: 'Cada apartamento es desinfectado por equipos profesionales siguiendo estrictos protocolos de seguridad.'
   },
   {
     icon: 'key',
-    title: 'Smart Check-in',
-    description: 'Enjoy full privacy with our contactless, digital key systems for seamless entry at any time.'
+    title: 'Check-in Inteligente',
+    description: 'Disfruta de total privacidad con nuestros sistemas de llaves digitales para una entrada sin contacto.'
   },
   {
     icon: 'support_agent',
-    title: '24/7 Support',
-    description: 'Our local team is available around the clock to assist with any questions or emergencies during your stay.'
+    title: 'Soporte 24/7',
+    description: 'Nuestro equipo local está disponible las 24 horas para ayudar con cualquier pregunta o emergencia.'
   }
 ];
