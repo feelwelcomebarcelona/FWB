@@ -1,0 +1,7 @@
+{
+  "name": "Feel Welcome Barcelona",
+  "description": "A high-end vacation rental booking and contact portal for Feel Welcome Barcelona, featuring interactive forms, location details, and guest testimonials.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
