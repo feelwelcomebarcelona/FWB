@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
@@ -13,5 +12,5 @@ if (container) {
     </React.StrictMode>
   );
 } else {
-  console.error("No se pudo encontrar el elemento raíz 'root'");
+  console.error("Error: Elemento raíz 'root' no encontrado.");
 }

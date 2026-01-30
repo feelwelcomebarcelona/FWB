@@ -1,19 +1,22 @@
-
 import React from 'react';
-import { FEATURES } from '../constants';
 
 const FeaturesSection: React.FC = () => {
+  const items = [
+    { icon: 'sanitizer', title: 'Limpieza Profesional', desc: 'Protocolos de desinfección rigurosos antes de cada llegada.' },
+    { icon: 'key', title: 'Entrada Inteligente', desc: 'Acceso sin llaves físicas para tu máxima comodidad y seguridad.' },
+    { icon: 'support_agent', title: 'Atención 24/7', desc: 'Equipo local disponible a cualquier hora para asistirte.' }
+  ];
+
   return (
-    <section className="mt-20 py-10 border-t border-[#dbe1e6]">
-      <h2 className="text-2xl font-bold mb-8 text-center">Safety & Cleaning Policies</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {FEATURES.map((feature, idx) => (
-          <div key={idx} className="flex flex-col items-center text-center p-8 bg-white rounded-2xl border border-[#dbe1e6] shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-primary/10 p-4 rounded-full text-primary mb-5">
-              <span className="material-symbols-outlined !text-3xl">{feature.icon}</span>
+    <section className="mt-24 py-12 border-t border-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {items.map((item, idx) => (
+          <div key={idx} className="flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-gray-50 shadow-sm hover:shadow-md transition-shadow group">
+            <div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+              <span className="material-symbols-outlined !text-4xl">{item.icon}</span>
             </div>
-            <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
-            <p className="text-sm text-[#60778a] leading-relaxed">{feature.description}</p>
+            <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
+            <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
           </div>
         ))}
       </div>
